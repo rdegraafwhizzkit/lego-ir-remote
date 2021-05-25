@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">Infra Red Sample</string>
-    <string name="console_placeholder">Console:\n</string>
+    <string name="app_name">LEGO Power Functions</string>
+    <string name="hint">Hint!</string>
+    <string name="fwd_button_red">FWD RED</string>
+    <string name="rev_button_red">REV RED</string>
+    <string name="brk_button_red">BRK RED</string>
+    <string name="left_button_red">LEFT RED</string>
+    <string name="right_button_red">RIGHT RED</string>
 </resources>

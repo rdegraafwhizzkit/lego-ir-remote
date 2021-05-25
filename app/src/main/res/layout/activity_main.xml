@@ -1,33 +1,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_vertical"
+    tools:context="nl.whizzkit.powerfunctions.MainActivity">
 
-    <EditText
-        android:id="@+id/console"
-        android:text="@string/console_placeholder"
-        android:background="@color/console_background"
-        android:layout_width="match_parent"
-        android:gravity="bottom"
-        android:padding="@dimen/console_padding"
-        android:typeface="monospace"
-        android:textSize="@dimen/console_text_size"
-        android:textColor="@color/console_text"
-        android:singleLine="false"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:inputType="textMultiLine"
-        android:layout_height="120dp" />
-
-    <Button
-        android:id="@+id/transmit_button"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="48sp"
-        android:gravity="center"
-        android:background="@drawable/button_states"
-        android:text="IR"/>
+        android:id="@+id/top">
+
+        <Button
+            android:id="@+id/fwd_button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="@string/fwd_button_red"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+        <Button
+            android:id="@+id/brk_button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="@string/brk_button_red"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/left_button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="@string/left_button_red"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/brk_button_red"/>
+
+        <Button
+            android:id="@+id/right_button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="@string/right_button_red"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/left_button_red"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middle">
+
+        <Button
+            android:id="@+id/rev_button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="@string/rev_button_red"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
 
 </RelativeLayout>

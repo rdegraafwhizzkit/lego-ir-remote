@@ -1,1 +1,3 @@
+rootProject.name = 'lego-power-functions'
+//include ':app', ':infrared'
 include ':app', ':infrared'
